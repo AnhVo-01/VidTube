@@ -11,12 +11,14 @@ for (let k = 0; k < playSV.length; k++) {
         this.className += " act";
 
         if(playSV[0].classList.contains('act')) {
-            server.append(link1);
-            server.removeChild(link2);
+            // server.append(link1);
+            // server.removeChild(link2);
             link1.style.display = "block";
+            link2.style.display = "none";
         }else{
-            server.removeChild(link1);
-            server.append(link2);
+            // server.removeChild(link1);
+            // server.append(link2);
+            link1.style.display = "none";
             link2.style.display = "block";
         }
 
@@ -27,9 +29,7 @@ for (let k = 0; k < playSV.length; k++) {
 // =========================================================================
 
 const eps = document.querySelectorAll(".halim-btn"),
-    epsTit = document.getElementById("eps-title"),
-    svLink1 = document.getElementById("link1"),
-    svLink2 = document.getElementById("link2");
+    epsTit = document.getElementById("eps-title");
 
 
 for (let i = 0; i < eps.length; i++){
@@ -39,8 +39,8 @@ for (let i = 0; i < eps.length; i++){
         var playls2 = document.getElementsByClassName("active2");
 
 
-        var play1 = svLink1.getElementsByClassName("play-video");
-        var play2 = svLink2.getElementsByClassName("play-video");
+        var play1 = link1.getElementsByClassName("play-box");
+        var play2 = link2.getElementsByClassName("play-box");
 
         current[0].className = current[0].className.replace(" select", "");
         eps[i].className += " select";
