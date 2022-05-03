@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>21stc - Play</title>
+    <title>21stc - Đấu La Đại Lục</title>
     <link rel="stylesheet" href="css/play.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <script src="js/fontAwesome.js"></script>
 </head>
 <body>
     <header>
         <nav class="flex-div">
             <div class="flex-div nav-left">
-                <i class="fa-solid fa-bars fa-lg menu-icon"></i>
+                <i class="fa-solid fa-bars fa-lg toggle toggle"></i>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/logo.png" class="logo">
+                        <img src="images/Logo2.png" class="logo">
                     </a>
                 </div>
             </div>
@@ -29,11 +30,13 @@
                 <!-- <img src="images/voice-search.png" class="mic-icon"> -->
             </div>
             <div class="flex-div nav-right">
-                <div class="get-bookmark">
-                    <i class="fa-solid fa-bookmark fa-xs"></i>
-                    <span> Phim Yêu Thích</span>
-                    <span class="count">0</span>
-                </div>
+                <a href="#">
+                    <div class="get-bookmark">
+                        <i class="fa-solid fa-bookmark fa-xs"></i>
+                        <span> Phim Yêu Thích</span>
+                        <span class="count">0</span>
+                    </div>
+                </a>
             </div>
         </nav>
     </header>
@@ -68,43 +71,236 @@
     <div class="container">
         <div class="main">
             <div class="left">
-                <div class="vid-box">
-                    <iframe class="play-video" src="https://www.youtube.com/embed/HVd3owuxFaU" title="YouTube video player" allowfullscreen></iframe>
+                <div id="myList">
+                    <div id="link1" class="vid-box">
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/dgU8UXs7jMA" title="eps-1" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/cKrxThy6eGw" title="eps-2" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/Ok6zhk95k_E" title="eps-3" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/o1_EMi1DDeM" title="eps-4" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/R2kpxwShdzg" title="eps-5" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/GRWV1OhgFAA" title="eps-6" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/P9DQgpq1fjU" title="eps-7" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/AJNFY2eDQ_s" title="eps-8" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/Nq_CbxPqfmc" title="eps-9" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/RtOlVkWubng" title="eps-10" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-11" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-12" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <iframe title="eps-27" type="text/html" src="https://www.dailymotion.com/embed/video/k6xf1zIH0Chf8XxVM4Z?queue-autoplay-next=false&amp;queue-enable=false&amp;sharing-enable=false" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-28" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video active1">
+                            <iframe title="eps-29" type="text/html" src="https://www.dailymotion.com/embed/video/k7559Ni87FEeQDxVNAO" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- ------------------ -->
+                    <div id="link2" class="vid-box">
+                        <div class="play-video">
+                            <video title="eps-1" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-2" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-3" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-4" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-5" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-6" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-7" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-8" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-9" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-10" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <video title="eps-11" autoplay loop>
+                                <source src="video/error.mp4">
+                            </video>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/HVd3owuxFaU" title="eps-12" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/vTOsxUks_XI" title="eps-27" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video">
+                            <iframe src="https://www.youtube.com/embed/JOMBoL3JqJo" title="eps-28" allowfullscreen></iframe>
+                        </div>
+                        <div class="play-video active2">
+                            <iframe src="https://www.youtube.com/embed/mtkPRlArLkU" title="eps-29" allowfullscreen></iframe>
+                        </div>
+                    </div>
 
                 </div>
+
+                <!-- ------------------------------------------------------------ -->
                 <div class="tags">
-                    <p>* Vui lòng bật phụ đề trong phần cài đặt video nếu không thấy hiển thị</p>
+                    <p>* Vui lòng bật phụ đề trong phần cài đặt video hoặc đổi sang server khác nếu không thấy hiển thị</p>
                 </div>
                 <div class="title-block">
                     <div class="title-wrapper">
                         <h2>
-                            <a href="https://hhhkungfu.tv/tuyet-ung-linh-chu-phan-3" title="Tuyết Ưng Lĩnh Chủ Phần 3 Tập 20 Vietsub">Đấu La Đại Lục - <span>Tập 12</span></a>
+                            <a href="dau-la-dai-luc.html" title="Đấu La Đại Lục">Đấu La Đại Lục - <span id="eps-title">Tập 27</span></a>
                         </h2>
                     </div>
                 </div>
 
-                <div class="server-box">
-                    <div class="list-server">
-                        <span class="play-sv active" data-subsv-id="1">Link 1</span>
-                        <span class="play-sv" data-subsv-id="2">Link 2</span>
-                        <span class="play-sv" data-subsv-id="3">Link 3</span>
-                    </div>
+                <div class="list-server">
+                    <button class="play-sv act">Link 1</button>
+                    <button class="play-sv">Link 2</button>
+                    <!-- <button class="play-sv">Link 3</button> -->
                 </div>
                 <div class="list-eps-box">
                     <ul class="nav-tabs">
-                        <li class="active">
-                            <a href="#server-0"><i class="hl-server"></i> FULL HD</a>
+                        <li>
+                            <a href="#server-0"><i class="fa-solid fa-server"></i> FULL HD</a>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div class="list-eps">
                             <ul class="eps-box">
                                 <li>
-                                    <a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-1-sv1.html" title="1">
-                                        <span class="halim-info-1-ep-1 halim-btn">1</span>
+                                    <a href="#1" title="1">
+                                        <span class="halim-btn">1</span>
                                     </a>
-                                </li><li class="halim-episode halim-episode-1-ep-2 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-2-sv1.html" title="2"><span class="halim-info-1-ep-2 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-2" data-position="" data-embed="1">2</span></a></li><li class="halim-episode halim-episode-1-ep-3 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-3-sv1.html" title="3"><span class="halim-info-1-ep-3 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-3" data-position="" data-embed="1">3</span></a></li><li class="halim-episode halim-episode-1-ep-4 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-4-sv1.html" title="4"><span class="halim-info-1-ep-4 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-4" data-position="" data-embed="1">4</span></a></li><li class="halim-episode halim-episode-1-ep-5 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-5-sv1.html" title="5"><span class="halim-info-1-ep-5 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-5" data-position="" data-embed="1">5</span></a></li><li class="halim-episode halim-episode-1-ep-6 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-6-sv1.html" title="6"><span class="halim-info-1-ep-6 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-6" data-position="" data-embed="1">6</span></a></li><li class="halim-episode halim-episode-1-ep-7 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-7-sv1.html" title="7"><span class="halim-info-1-ep-7 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-7" data-position="" data-embed="1">7</span></a></li><li class="halim-episode halim-episode-1-ep-8 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-8-sv1.html" title="8"><span class="halim-info-1-ep-8 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-8" data-position="" data-embed="1">8</span></a></li><li class="halim-episode halim-episode-1-ep-9 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-9-sv1.html" title="9"><span class="halim-info-1-ep-9 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-9" data-position="" data-embed="1">9</span></a></li><li class="halim-episode halim-episode-1-ep-10 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-10-sv1.html" title="10"><span class="halim-info-1-ep-10 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-10" data-position="" data-embed="1">10</span></a></li><li class="halim-episode halim-episode-1-ep-11 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-11-sv1.html" title="11"><span class="halim-info-1-ep-11 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-11" data-position="" data-embed="1">11</span></a></li><li class="halim-episode halim-episode-1-ep-12 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-12-sv1.html" title="12"><span class="halim-info-1-ep-12 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-12" data-position="" data-embed="1">12</span></a></li><li class="halim-episode halim-episode-1-ep-13 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-13-sv1.html" title="13"><span class="halim-info-1-ep-13 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-13" data-position="" data-embed="1">13</span></a></li><li class="halim-episode halim-episode-1-ep-14 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-14-sv1.html" title="14"><span class="halim-info-1-ep-14 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-14" data-position="" data-embed="1">14</span></a></li><li class="halim-episode halim-episode-1-ep-15 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-15-sv1.html" title="15"><span class="halim-info-1-ep-15 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-15" data-position="" data-embed="1">15</span></a></li><li class="halim-episode halim-episode-1-ep-16 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-16-sv1.html" title="16"><span class="halim-info-1-ep-16 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-16" data-position="" data-embed="1">16</span></a></li><li class="halim-episode halim-episode-1-ep-17 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-17-sv1.html" title="17"><span class="halim-info-1-ep-17 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-17" data-position="" data-embed="1">17</span></a></li><li class="halim-episode halim-episode-1-ep-18 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-18-sv1.html" title="18"><span class="halim-info-1-ep-18 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-18" data-position="" data-embed="1">18</span></a></li><li class="halim-episode halim-episode-1-ep-19 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-19-sv1.html" title="19"><span class="halim-info-1-ep-19 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-19" data-position="" data-embed="1">19</span></a></li><li class="active halim-episode halim-episode-1-ep-20 col-xs-2 col-sm-1 col-lg-1"><a href="https://hhhkungfu.tv/xem-phim-tuyet-ung-linh-chu-phan-3/ep-20-sv1.html" title="20"><span class="active halim-info-1-ep-20 halim-btn" data-post-id="683" data-server="1" data-episode-slug="ep-20" data-position="last" data-embed="1">20</span></a></li></ul><div class="clearfix">
-                            </div>
+                                </li>
+                                <li>
+                                    <a href="#2" title="2">
+                                        <span class="halim-btn">2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#3" title="3">
+                                        <span class="halim-btn">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#4" title="4">
+                                        <span class="halim-btn">4</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#5" title="5">
+                                        <span class="halim-btn">5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#6" title="6">
+                                        <span class="halim-btn">6</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#7" title="7">
+                                        <span class="halim-btn">7</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#8" title="8">
+                                        <span class="halim-btn">8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#9" title="9">
+                                        <span class="halim-btn">9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#10" title="10">
+                                        <span class="halim-btn">10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#11" title="11">
+                                        <span class="halim-btn">11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#12" title="12">
+                                        <span class="halim-btn">12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#27" title="27">
+                                        <span class="halim-btn">27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#28" title="28">
+                                        <span class="halim-btn">28</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#29" title="29">
+                                        <span class="halim-btn select">29</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -237,5 +433,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/playControl.js"></script>
 </body>
 </html>

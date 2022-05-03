@@ -60,7 +60,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.nav-left .menu-icon{
+.nav-left .toggle{
     cursor: pointer;
 }
 .nav-left .logo{
@@ -128,7 +128,6 @@ header{
 .menu-links{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     margin: 0 5%;
     transition: var(--tran-05);
 }
@@ -161,32 +160,7 @@ header{
     grid-template-columns: 3fr 1.2fr;
     gap: 15px;
 }
-.section-bar{
-    position: relative;
-    margin-bottom: 15px;
-}
-.section-title {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 11px;
-    margin: 0;
-    position: relative;
-    text-transform: uppercase;
-    display: flow-root;
-}
-.section-title span {
-    float: left;
-    font-size: 15px;
-    padding: 10px 0;
-    color: #a5cbef;
-    background: linear-gradient(to right,#ff8a00,#ff2070);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    font-weight: 700;
-    border-bottom: 1px solid #da1b60;
-}
+
 /* ------------------------------- left ------------------------------- */
 .vid-box{
     position: relative;
@@ -197,14 +171,22 @@ header{
     padding-bottom: 55.25%;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+#link2{
+    display: none;
+}
 .play-video{
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    height: 100%;
+    right: 0;
     width: 100%;
+    height: 100%;
     border: 0;
+    display: none;
+}
+.play-video.active{
+    display: block;
 }
 .tags{
     margin: 15px 0;
@@ -231,31 +213,32 @@ header{
     overflow: hidden;
 }
 
-.server-box{
-    text-align: center;
-}
+/* -------------------------------------------------------------------- */
 .list-server{
-    margin: 10px 5px;
+    text-align: center;
+    margin: 10px auto;
 }
 .play-sv {
-    background: linear-gradient(140deg, rgba(26, 26, 32, 0.25) 0%, rgba(0, 77, 102, 0.25) 50%, rgba(0, 134, 179, 0.25) 75%, rgba(0, 191, 255, 0.25) 100%);
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    border: 0;
     margin: 2px;
     padding: 6px 10px;
     font-size: 11px;
     border-radius: 2px;
-    color: #fff;
     transition: var(--tran-05);
-    cursor: pointer;
-    display: inline-block;
+    background: linear-gradient(140deg, rgba(26, 26, 32, 0.25) 0%, rgba(0, 77, 102, 0.25) 50%, rgba(0, 134, 179, 0.25) 75%, rgba(0, 191, 255, 0.25) 100%);
 }
 .play-sv:hover{
     transition: var(--tran-05);
     background: rgba(0, 191, 255, 0.25);
 }
-.play-sv.active {
+.play-sv.act {
     background: linear-gradient(140deg, rgba(0, 77, 102, 0.8) 0%, rgba(0, 134, 179, 0.9) 50%, rgba(0, 191, 255, 1) 100%);
 }
 
+/* -------------------------------------------------------------------- */
 .list-eps-box{
     margin-top: 15px;
 }
@@ -263,16 +246,14 @@ header{
     display: inline-block;
     text-align: center;
     padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .nav-tabs {
     border-bottom: 1px solid #2e2e38;
 }
-.nav-tabs li.active {
-    background: #2e2e38;
-}
 .nav-tabs li {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    background: #2e2e38;
 }
 .tab-content {
     background: #1e1e24;
@@ -280,21 +261,33 @@ header{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.list-eps ul{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-}
 .list-eps{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.list-eps ul li{
-    width: 46px;
-    background: #23232a;
-    border-radius: 8px;
+.list-eps ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 60px);
+    gap: 10px;
+}
+
+.list-eps ul li span{
+    cursor: pointer;
+    display: inline-block;
+    background: #27333f;
+    padding: 0.2rem 0;
+    border-radius: 7.5px;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.list-eps ul li span.select{
+    background: linear-gradient(140deg, #27333f 0%, rgba(98, 128, 157, 0.6) 50%, rgba(98, 128, 157, 0.85) 75%, #728da7 100%);
+}
+.list-eps ul li span:hover{
+    border: 1px solid #62809d;
 }
 /* ------------------------------- right ------------------------------ */
 .right .item {
@@ -311,6 +304,10 @@ header{
 }
 .right .item:hover{
     background-position: right center;
+}
+.item:hover img{
+    transform: scale(1.1);
+    transition: var(--tran-04);
 }
 .item .item-link{
     float: left;

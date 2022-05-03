@@ -1,8 +1,8 @@
-var menu = document.querySelector(".menu");
-var menuIcon = document.querySelector(".menu-icon");
-var container = document.querySelector(".container");
+const menu = document.querySelector(".menu"),
+    toggle = document.querySelector(".toggle"),
+    container = document.querySelector(".container");
 
-menuIcon.onclick = () => {
+toggle.onclick = () => {
     menu.classList.toggle("open");
     container.classList.toggle("large-container");
-}
+};
