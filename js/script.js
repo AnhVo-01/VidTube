@@ -8,6 +8,6 @@ toggle.onclick = () => {
     container.classList.toggle("large-container");
 };
 
-menuIcon.toggle = () => {
+menuIcon.onclick = () => {
     menu.classList.toggle("open");
 }
