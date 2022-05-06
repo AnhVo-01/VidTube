@@ -55,11 +55,7 @@ for (let i = 0; i < eps.length; i++){
             play2[i].className += " active2";
         }
 
-        if (i < 9){
-            epsTit.innerHTML = "Tập 0" + (i+1);
-            document.title = "0" + (i+1) + " || Đấu La Đại Lục";
-        }else{
-            epsTit.innerHTML = "Tập " + (i+1);
-        }
+        document.title = eps[i].innerHTML + " || Đấu La Đại Lục";
+        epsTit.innerHTML = "Tập " + eps[i].innerHTML;
     });
 }
