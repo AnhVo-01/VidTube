@@ -3,6 +3,11 @@ const link1 = document.getElementById("link1"),
       server = document.getElementById("myList"),
       playSV = document.getElementsByClassName("play-sv");
 
+function removeItem(){
+    server.removeChild(link2);
+}
+
+
 for (let k = 0; k < playSV.length; k++) {
     playSV[k].addEventListener("click", function() {
         var current = document.getElementsByClassName("act");
@@ -45,15 +50,20 @@ for (let i = 0; i < eps.length; i++){
         current[0].className = current[0].className.replace(" select", "");
         eps[i].className += " select";
 
-        if(server.contains(link1) == true){
+        if(server.contains(link1) == true || server.contains(link2) == true){
             playls1[0].className = playls1[0].className.replace(" active1", "");
             play1[i].className += " active1";
-        }
-
-        if(server.contains(link2) == true){
+            
             playls2[0].className = playls2[0].className.replace(" active2", "");
             play2[i].className += " active2";
         }
+        // else if(server.contains(link1) == true && server.contains(link2) == false){
+        //     playls1[0].className = playls1[0].className.replace(" active1", "");
+        //     play1[i].className += " active1";
+            
+        //     playls2[0].className = playls2[0].className.replace(" active2", "");
+        //     play2[i].className += " active2";
+        // }
 
         document.title = eps[i].innerHTML + " || Đấu La Đại Lục";
         epsTit.innerHTML = "Tập " + eps[i].innerHTML;
