@@ -473,6 +473,9 @@ footer a{
     .nav-right .get-bookmark span{
         display: none;
     }
+    .container{
+        padding-left: 2%;
+    }
     .slideshow-container{
         display: none;
     }
